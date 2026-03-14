@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "merged_audio_pauses": {
+    "period": 0.3,
+    "comma": 0.2,
+    "exclamation": 0.6,
+    "question": 0.6,
+    "hyphen": 0.1,
+    "ellipsis": 0.9,
+    "double_power": 0.2,
+    "triple_power": 1.2
+  },
+  "contextual_modifiers": {
+    "speaker_change_bonus": 0.3,
+    "short_line_threshold_chars": 20,
+    "short_line_reduction_s": 0.2,
+    "long_line_threshold_chars": 200,
+    "long_line_addition_s": 0.3,
+    "inner_thought_padding_s": 0.1,
+    "same_speaker_reduction_s": 0.1,
+    "first_line_padding_s": 0.5,
+    "last_line_padding_s": 1.0
+  },
+  "ui": {
+    "default_profiles_path": "",
+    "last_output_folder": "C:/Users/Mongoose/Desktop/testing",
+    "last_script_folder": "C:\\ClaudeWorkspace\\Script-to-Voice-Generator-Chirp3\\!docs\\example_scripts",
+    "last_sfx_folder": "C:/Users/Mongoose/Desktop/testing",
+    "show_all_tts_languages": false,
+    "last_project_name": "example_tiny",
+    "show_welcome_popup": false,
+    "normalize_clip_loudness": false,
+    "peak_normalize_pure": true,
+    "google_credentials_path": "C:/Users/Mongoose/Downloads/gen-lang-client-0987570728-7b183d0d64f7.json",
+    "test_text": "The quick brown fox jumps over the lazy dog."
+  },
+  "inner_thoughts": {
+    "preset": "Dreamlike",
+    "custom": {
+      "highpass": 300,
+      "lowpass": 3000,
+      "echo_delay_ms": 80,
+      "echo_wet": 0.2,
+      "volume": 0.75
+    }
+  },
+  "usage": {
+    "chars_sent_this_month": 11082,
+    "month_key": "2026-03"
+  },
+  "silence_trim": {
+    "mode": "beginning_end",
+    "start_threshold_db": -70,
+    "stop_threshold_db": -70
+  },
+  "output_format": "mp3"
+}
