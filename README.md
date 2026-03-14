@@ -6,9 +6,13 @@ Convert formatted script files into fully voiced audio using **Google Cloud Text
 
 Google Cloud provides 1 million free characters per month, so you can generate roughly 18 to 22 hours of audio content - for free. The exact duration depends on the average word length and the speaking rate of the voice.
 
+**Get it here:** https://reactorcore.itch.io/script-to-voice-generator-googletts
+
 **Made by Reactorcore** — https://linktr.ee/reactorcore
 
 ---
+
+
 
 ## What It Does
 
