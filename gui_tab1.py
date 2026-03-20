@@ -6,6 +6,7 @@ For Script to Voice Generator GUI
 import tkinter as tk
 from tkinter import scrolledtext
 import ttkbootstrap as ttk
+from tkinter import ttk as _tk_ttk
 from ttkbootstrap.constants import *
 
 from config import APP_THEME
@@ -59,7 +60,7 @@ class Tab1Builder:
         desc_label.pack(pady=(0, 15))
 
         # --- File Loading Section ---
-        file_frame = ttk.LabelFrame(scrollable, text="Script File", padding=10)
+        file_frame = _tk_ttk.LabelFrame(scrollable, text="Script File", padding=10)
         file_frame.pack(fill=X, pady=(0, 10))
 
         btn_row = ttk.Frame(file_frame)
@@ -88,7 +89,7 @@ class Tab1Builder:
         self.loaded_file_label.pack(anchor=W, pady=(0, 5))
 
         # --- Parse Results / Stats ---
-        stats_frame = ttk.LabelFrame(scrollable, text="Script Summary", padding=10)
+        stats_frame = _tk_ttk.LabelFrame(scrollable, text="Script Summary", padding=10)
         stats_frame.pack(fill=X, pady=(0, 10))
 
         stats_grid = ttk.Frame(stats_frame)
@@ -128,7 +129,7 @@ class Tab1Builder:
         self.stat_title.grid(row=1, column=3, columnspan=3, sticky=W, pady=(5, 0))
 
         # --- Speakers List ---
-        speakers_frame = ttk.LabelFrame(scrollable, text="Detected Speakers", padding=10)
+        speakers_frame = _tk_ttk.LabelFrame(scrollable, text="Detected Speakers", padding=10)
         speakers_frame.pack(fill=X, pady=(0, 10))
 
         lb_frame = ttk.Frame(speakers_frame)
@@ -149,7 +150,7 @@ class Tab1Builder:
         lb_scrollbar.pack(side=RIGHT, fill=Y)
 
         # --- Log Panel ---
-        log_frame = ttk.LabelFrame(scrollable, text="Parse Log", padding=10)
+        log_frame = _tk_ttk.LabelFrame(scrollable, text="Parse Log", padding=10)
         log_frame.pack(fill=BOTH, expand=True, pady=(0, 10))
 
         self.parse_log = scrolledtext.ScrolledText(log_frame, height=12,

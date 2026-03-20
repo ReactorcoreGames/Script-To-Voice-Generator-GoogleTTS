@@ -10,6 +10,7 @@ import subprocess
 import sys
 import tkinter as tk
 import ttkbootstrap as ttk
+from tkinter import ttk as _tk_ttk
 import webbrowser
 from pathlib import Path
 from tkinter import filedialog
@@ -114,7 +115,7 @@ class Tab4Builder:
 
     def _build_google_api_section(self, parent):
         """Build the Google Cloud TTS credentials + usage section."""
-        frame = ttk.LabelFrame(parent, text="Google Cloud TTS", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Google Cloud TTS", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -292,7 +293,7 @@ class Tab4Builder:
 
     def _build_output_format_section(self, parent):
         """Build the TTS output format selector (MP3 / OGG Opus)."""
-        frame = ttk.LabelFrame(parent, text="Output Format", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Output Format", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -331,7 +332,7 @@ class Tab4Builder:
 
     def _build_silence_trim_section(self, parent):
         """Build the silence trimming mode controls."""
-        frame = ttk.LabelFrame(parent, text="Silence Trimming", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Silence Trimming", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -377,7 +378,7 @@ class Tab4Builder:
 
     def _build_quick_access_section(self, parent):
         """Build the Quick Access buttons rows."""
-        frame = ttk.LabelFrame(parent, text="Quick Access", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Quick Access", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -468,7 +469,7 @@ class Tab4Builder:
 
     def _build_pauses_section(self, parent):
         """Build sliders for all 8 punctuation pause values."""
-        frame = ttk.LabelFrame(parent, text="Merged Audio Pauses", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Merged Audio Pauses", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -555,7 +556,7 @@ class Tab4Builder:
 
     def _build_contextual_modifiers_section(self, parent):
         """Build controls for all contextual modifier values."""
-        frame = ttk.LabelFrame(parent, text="Contextual Modifiers", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Contextual Modifiers", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -690,7 +691,7 @@ class Tab4Builder:
 
     def _build_inner_thoughts_section(self, parent):
         """Build the inner thoughts effect preset picker and custom controls."""
-        frame = ttk.LabelFrame(parent, text="Inner Thoughts Effect", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Inner Thoughts Effect", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -731,7 +732,7 @@ class Tab4Builder:
         self._it_desc_label.pack(anchor=W, pady=(0, 8))
 
         # Custom parameters frame (shown only when "Custom" is selected)
-        self._it_custom_frame = ttk.LabelFrame(frame, text="Custom Parameters", padding=8)
+        self._it_custom_frame = _tk_ttk.LabelFrame(frame, text="Custom Parameters", padding=8)
         self._it_custom_frame.pack(fill=X, pady=(0, 8))
 
         self._build_it_custom_controls(self._it_custom_frame)

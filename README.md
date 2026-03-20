@@ -1,5 +1,3 @@
-![Image](https://github.com/user-attachments/assets/f5195a68-0f18-4384-b514-4ec6797c1aac)
-
 # Script to Voice Generator - Google TTS
 
 Welcome to any script writing author out there!
@@ -8,13 +6,9 @@ Convert formatted script files into fully voiced audio using **Google Cloud Text
 
 Google Cloud provides 1 million free characters per month, so you can generate roughly 18 to 22 hours of audio content - for free. The exact duration depends on the average word length and the speaking rate of the voice.
 
-**Get it here:** https://reactorcore.itch.io/script-to-voice-generator-googletts
-
 **Made by Reactorcore** — https://linktr.ee/reactorcore
 
 ---
-
-<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/9f3003c8-3b9a-4fc4-b8cb-a515fb6514e3" />
 
 ## What It Does
 

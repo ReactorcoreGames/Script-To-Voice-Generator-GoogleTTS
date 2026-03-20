@@ -7,6 +7,7 @@ Layout/build methods only — state/event methods are in gui_tab2_state.py.
 
 import tkinter as tk
 import ttkbootstrap as ttk
+from tkinter import ttk as _tk_ttk
 from ttkbootstrap.constants import *
 
 from config import (APP_THEME, AUDIO_EFFECTS, EFFECT_LEVELS, ALIEN_VARIANTS, CAVE_VARIANTS,
@@ -136,7 +137,7 @@ class Tab2Builder:
 
     def _build_apply_to_all_section(self, parent):
         """Build the 'Apply to All' effects section."""
-        frame = ttk.LabelFrame(parent, text="Apply Audio Effects to All Speakers", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Apply Audio Effects to All Speakers", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         ttk.Label(frame,
@@ -247,7 +248,7 @@ class Tab2Builder:
 
     def _build_sfx_section(self, parent):
         """Build the sound effects folder/file section."""
-        frame = ttk.LabelFrame(parent, text="Sound Effects", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text="Sound Effects", padding=10)
         frame.pack(fill=X, pady=(0, 10))
 
         # Folder picker row
@@ -416,7 +417,7 @@ class Tab2Builder:
 
     def _build_speaker_panel(self, parent, speaker_id, profile):
         """Build a single speaker configuration panel."""
-        frame = ttk.LabelFrame(parent, text=f"  {speaker_id}  ", padding=10)
+        frame = _tk_ttk.LabelFrame(parent, text=f"  {speaker_id}  ", padding=10)
         frame.pack(fill=X, pady=(0, 8))
 
         # Create tkinter variables for this speaker
